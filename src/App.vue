@@ -1,17 +1,34 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <div id="App">
+  <img v-bind:src="selectedImage" />
+  <counter lable="Start"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import HelloWorld from "./components/HelloWorld";
+import Counter from "./components/Cunter";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    HelloWorld,
+    Counter,
+  },
+
+  data: function () {
+    return {
+      images: [
+      'img/alien-spaceship-flying-cosmos-planets_33099-2480.jpg',
+      'img/c1_1764659_191004103525.jpg',
+      'img/Infinity_Vol_1_4_Generals_Variant_Textless.jpg',
+    ],
+    selectedImage: ''
+  },
+  created () {
+    const idx = Math.floor(Math.random() * this.images.length);
+    this.selectedImage = this.images[idx]
+  }
+    
+    }
   }
 }
 </script>
