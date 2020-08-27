@@ -68,10 +68,8 @@
 </template>
 
 <script>
-import Button from "./components/Button"
-import Wan from "./components/Wan"
-
-
+import Button from "./components/Button.vue"
+import Wan from "./components/Wan.vue"
 export default {
     name: 'App',
 
