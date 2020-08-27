@@ -1,5 +1,5 @@
 <template>
-<div id="Select">
+<div id="Wan">
 
     <button @click="random">
         random
@@ -15,12 +15,12 @@ export default {
             player: [{
                     name: 'Anakin Skywalker',
                     hp: 800,
-                    image: 'img/bc3c5f18fda1171262442a752f8693dd.gif'
+                    image: 'https://www.google.com/search?q=anakin+skywalker+gif&tbm=isch&ved=2ahUKEwjotbuF3bvrAhWSxXMBHbTmBUEQ2-cCegQIABAA&oq=Anakin+Skywalker+&gs_lcp=CgNpbWcQARgAMgQIIxAnMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAOgQIABBDUILjCVjT6glg2_AJaABwAHgAgAFZiAGxAZIBATKYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=7NRHX-iPA5KLz7sPtM2XiAQ&bih=758&biw=1440&client=safari#imgrc=lcZcsABPGonSsM&imgdii=knNXxjHqAHv1JM'
                 },
                 {
                     name: 'Ironman',
                     hp: 500,
-                    image: 'img/tenor.gif'
+                    image: 'https://www.google.com/search?q=Ironman+gif&tbm=isch&ved=2ahUKEwi7y5vT3bvrAhWEBrcAHZfpAYoQ2-cCegQIABAA&oq=Ironman+gif&gs_lcp=CgNpbWcQAzIECAAQQzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIAFDPhQNYz4UDYPeJA2gAcAB4AIABUIgBUJIBATGYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=j9VHX_vHBoSN3LUPl9OH0Ag&bih=758&biw=1440&client=safari#imgrc=4U4dPnnPHxebqM&imgdii=TjQH9Mdd1Ula1M'
                 },
                 {
                     name: 'spiderman',
@@ -30,7 +30,7 @@ export default {
                 {
                     name: 'Payut',
                     hp: 50,
-                    image: 'img/tenors.gif'
+                    image: 'https://www.google.com/search?q=Payut+gif&tbm=isch&ved=2ahUKEwjLrNvr3bvrAhVN43MBHbkGCSoQ2-cCegQIABAA&oq=Payut+gif&gs_lcp=CgNpbWcQA1DDvAJYw7wCYLnDAmgAcAB4AIABSIgBSJIBATGYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=wtVHX8vDHc3Gz7sPuY2k0AI&bih=758&biw=1440&client=safari#imgrc=jsUGf2vLSNKqoM&imgdii=bf_1AJOUpF-uNM'
                 },
             ],
 
@@ -38,17 +38,17 @@ export default {
                 {
                     name: 'Darth Vader',
                     hp: 800,
-                    image: 'img/bc3c5f18fda1171262442a752f8693dd.gif'
+                    image: 'https://www.google.com/search?q=Darth+Vader+gif&tbm=isch&ved=2ahUKEwiS9vD_3bvrAhWCT3wKHYLVDU8Q2-cCegQIABAA&oq=Darth+Vader+gif&gs_lcp=CgNpbWcQAzIECCMQJzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIAFD1twFY9bcBYPnAAWgAcAB4AIAB2gGIAdoBkgEDMi0xmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=7NVHX5LQL4Kf8QOCq7f4BA&bih=758&biw=1440&client=safari#imgrc=qFyL7yVrEG4XtM&imgdii=F8rPL_dHRuBoQM'
                 },
                 {
                     name: 'Thnos',
                     hp: 990,
-                    image: 'img/original.gif'
+                    image: 'https://www.google.com/search?q=Thnos+gif&tbm=isch&ved=2ahUKEwiv07WM3rvrAhVNNrcAHYI7Cs0Q2-cCegQIABAA&oq=Thnos+gif&gs_lcp=CgNpbWcQAzIGCAAQChAYUIjSAli32gJghN0CaABwAHgAgAFIiAGNAZIBATKYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=B9ZHX--zBM3s3LUPgveo6Aw&bih=758&biw=1440&client=safari#imgrc=yQmhtdzxeVnMFM'
                 },
                 {
                     name: 'Cell',
                     hp: 434,
-                    image: 'img/7d3.gif'
+                    image: 'https://www.google.com/search?q=Cell%20gif&tbm=isch&tbs=rimg%3ACUr5axB1s22JYQKC-6qK9wVd&client=safari&hl=en-GB&sa=X&ved=0CCcQuIIBahcKEwi4zfyv3rvrAhUAAAAAHQAAAAAQDA&biw=1440&bih=758#imgrc=_IhiuvJhsurfuM'
                 }
             ]
         }
