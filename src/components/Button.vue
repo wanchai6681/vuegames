@@ -1,7 +1,7 @@
 <template>
 <div id="Button">
-    <button @click="$attk">battle</button>
-    <button @click="$Spattk">Attack </button>
+    <Button @click="$attk">battle</Button>
+    <Button @click="$Spattk">Attack </Button>
 </div>
 </template>
 

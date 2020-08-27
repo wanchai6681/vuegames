@@ -1,9 +1,9 @@
 <template>
 <div id="Wan">
 
-    <button @click="random">
+    <Button @click="random">
         random
-    </button>
+    </Button>
 
 </div>
 </template>

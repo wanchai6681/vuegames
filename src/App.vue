@@ -2,7 +2,7 @@
 <div id="app">
     <div class="row">
         <div class="col-md-4"></div>
-        <div class="col-md-4"> <button @click="show = !show">Start</button>
+        <div class="col-md-4"> <Button @click="show = !show">Start</Button>
 
             <transition name="fade">
                 <div v-if="show">
