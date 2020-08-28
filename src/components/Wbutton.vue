@@ -72,6 +72,9 @@ export default {
             {name : "Doraemon",
             HP : 670,
             img :'https://media3.giphy.com/media/TkDVr6D3OgqEqcLIYP/giphy.gif'},
+              {name : "Doraemon",
+            HP : 670,
+            img :'https://media3.giphy.com/media/TkDVr6D3OgqEqcLIYP/giphy.gif'},
         ],
         monster : [
           {name : "Thanos",
@@ -156,8 +159,9 @@ export default {
     },
   },
   created() {
-    this.selectedmonster = this.randommonster(this.monster)
-    this.selectedplayer = this.randomplayer(this.player)
+      this.selectedplayer = this.randomplayer(this.player)
+      this.selectedmonster = this.randommonster(this.monster)
+    
   },
   
 };
