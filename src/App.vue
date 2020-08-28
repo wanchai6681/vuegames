@@ -2,7 +2,7 @@
 <div id="app" class="container">
 
     <div class="fullscreen-viedo-wrap ">
-        <video src="./assets/bg.mp4" loop autoplay muted></video>
+        <video src="" loop autoplay muted></video>
     </div>
     <div class="overlay"></div>
 
@@ -57,10 +57,6 @@
     <div class="row ">
         <div class="col-md-3"></div>
         <div class="col-md-6 content">
-            
-           
-          
-
         </div>
         <div class="col-md-3"></div>
     </div>
@@ -88,15 +84,15 @@
 
  
   
-            <modal v-if="HPHero <= 0 && HPMonster > 0 && heroname != ''"  @$reset="$reset" @reset="reset" @close="showModal = false"  >
+            <Mwan v-if="HPHero <= 0 && HPMonster > 0 && heroname != ''"  @$reset="$reset" @reset="reset" @close="showModal = false"  >
                 <h3 slot="header">YOU LOUSE</h3>
-            </modal>
-            <modal v-if="HPMonster <= 0 && HPHero > 0 && heroname != ''"  @$reset="$reset" @reset="reset" @close="showModal = false"  >
+            </Mwan>
+            <Mwan v-if="HPMonster <= 0 && HPHero > 0 && heroname != ''"  @$reset="$reset" @reset="reset" @close="showModal = false"  >
                 <h3 slot="header">YOU WIN</h3>
-            </modal>
-            <modal v-if="(HPHero<=0 && HPMonster <= 0 ) && heroname != ''"  v-bind="reset" @$reset="$reset" @reset="reset" @close="showModal = false"  >
+            </Mwan>
+            <Mwan v-if="(HPHero<=0 && HPMonster <= 0 ) && heroname != ''"  v-bind="reset" @$reset="$reset" @reset="reset" @close="showModal = false"  >
                 <h3 slot="header">DRAW</h3>
-            </modal>
+            </Mwan>
 
 </div>
 </template>
@@ -104,8 +100,8 @@
 <script>
 import Wbutton from "./components/Wbutton"
 import Wan from "./components/Wan.vue"
-import modal from "./components/modal.vue"
-import './csstyle.css'
+import Mwan from "./components/Mwan.vue"
+import ''
 
 export default {
     name: 'App',
@@ -118,7 +114,7 @@ export default {
     components: {
         Wbutton,
         Wan,
-        modal
+        Mwan
 
     },
 
