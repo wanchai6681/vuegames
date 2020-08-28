@@ -3,7 +3,7 @@
     <button @click="reloadPage()" class="btn btn-dark">Start</button>
     <div class="row">
         <div class="col-5">
-          <img style="width:50%" :src="selectedmonster.img"  alt="">
+          <img style="width:50%" :src="selectedplayer.img"  alt="">
         </div>
         <div class="col-2">
           <div class="row">
@@ -15,18 +15,18 @@
           </div>
         </div>
         <div class="col-5">
-          <img style="width:50%" :src="selectedplayer"  alt="">
+          <img style="width:50%" :src="selectedmonster"  alt="">
     </div>
     </div>
     <div class="row">
-      <div class="col-5" >
-        Monster : {{selectedmonster.name}}
+      <div class="col-6" >
+        Player : {{selectedplayer.name}}
         <br>
          <img  v-bind:style="{width: php + 'px'}"  :src="phpbar"  alt="" height="15px">
          {{php}}
       </div>
-      <div class="col-5">
-        Player : {{selectedplayer.name}}
+      <div class="col-6">
+        Monster
         <br>
         <img  v-bind:style="{width: mhp + 'px'}"  :src="mhpbar"  alt="" height="15px">
         {{mhp}}
@@ -39,10 +39,10 @@
     <div id="result">
       <div v-if="mhp==0 || php==0">
         <div v-if="mhp <php">       
-        Monste win
+        Player win
     </div>
     <div v-else-if="php < mhp">
-        Player win
+        Monster win
     </div>
     <div v-else-if="mhp==php">
         Draw
@@ -62,37 +62,27 @@ export default {
       phpbar : 'https://i.imgur.com/Q5xIoUa.png',
       mhpbar : 'https://i.imgur.com/Q5xIoUa.png',
       versus : 'https://media0.giphy.com/media/l4pTkNEd2P4MWo9iw/source.gif',
-        player : [
-            {name :"Anakin Skywalker",
-            HP : 390,
-            img :'https://media0.giphy.com/media/Mir5fnHxvXrTa/giphy.gif'},
-            {name :"Iron man",
-            HP : 400,
-            img :'https://i.pinimg.com/originals/be/17/d2/be17d2237e14cdd73caa8cf1d7e54d09.gif'},
-            {name : "Doraemon",
-            HP : 670,
-            img :'https://media3.giphy.com/media/TkDVr6D3OgqEqcLIYP/giphy.gif'},
-              {name : "Doraemon",
-            HP : 670,
-            img :'https://media3.giphy.com/media/TkDVr6D3OgqEqcLIYP/giphy.gif'},
+         player : [
+            {name :"Anakin Skywalker",img :'https://media0.giphy.com/media/Mir5fnHxvXrTa/giphy.gif'},
+            {name :"Iron man",img :'https://i.pinimg.com/originals/be/17/d2/be17d2237e14cdd73caa8cf1d7e54d09.gif'},
+            {name : "Doraemon",img :'https://media3.giphy.com/media/TkDVr6D3OgqEqcLIYP/giphy.gif'},
+              {name : "Doraemon",img :'https://media3.giphy.com/media/TkDVr6D3OgqEqcLIYP/giphy.gif'},
         ],
         monster : [
-          {name : "Thanos",
-            HP : 600,
-            img :'https://data.whicdn.com/images/326805782/original.gif'},
-            {name : "Darth vader",
-            HP : 250,
-            img : 'https://thumbs.gfycat.com/BruisedGrimyGalago-size_restricted.gif'},
-            {name : "Cell",
-            HP : 300,img : 'https://i.makeagif.com/media/10-28-2015/C03MEO.gif'},
-            {name : "Prayut",
-            HP : 50,
-            img : 'https://www.khaosodenglish.com/wp-content/uploads/2017/04/ten-punch-man.gif'},
+            {name : "Thanos",img :'https://data.whicdn.com/images/326805782/original.gif'},
+            {name : "Darth vader",img : 'https://thumbs.gfycat.com/BruisedGrimyGalago-size_restricted.gif'},
+            {name : "Cell",img : 'https://i.makeagif.com/media/10-28-2015/C03MEO.gif'},
+            {name : "Prayut",img : 'https://www.khaosodenglish.com/wp-content/uploads/2017/04/ten-punch-man.gif'},
             
         ],
-        selectedplayer: {name:"",img:null,},
-        selectedmonster : {name:"",img:null},
+        selectedmonster: {name:"",img:null},
+        selectedplayer : {name:"",img:null},
+      ppower: "",
+      mpower: "",
+      php: 850,
+      mhp: 750,
       term: false,
+        
     };
   },
   methods: {
@@ -159,9 +149,8 @@ export default {
     },
   },
   created() {
-      this.selectedplayer = this.randomplayer(this.player)
-      this.selectedmonster = this.randommonster(this.monster)
-    
+    this.selectedmonster = this.randommonster(this.monster)
+    this.selectedplayer = this.randomplayer(this.player)
   },
   
 };
@@ -171,6 +160,6 @@ export default {
 #result{
   height : 50px;
   font-size : 200%;
-  color :rgb(1, 1, 1);
+  color :aliceblue;
 }
 </style>
