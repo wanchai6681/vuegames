@@ -1,10 +1,9 @@
 <template>
 <div id="Wan">
 
-    <Button @click="random">
+    <button @click="random">
         random
-    </Button>
-
+    </button>
 </div>
 </template>
 
@@ -15,12 +14,12 @@ export default {
             player: [{
                     name: 'Anakin Skywalker',
                     hp: 800,
-                    image: 'https://www.google.com/search?q=anakin+skywalker+gif&tbm=isch&ved=2ahUKEwjotbuF3bvrAhWSxXMBHbTmBUEQ2-cCegQIABAA&oq=Anakin+Skywalker+&gs_lcp=CgNpbWcQARgAMgQIIxAnMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAOgQIABBDUILjCVjT6glg2_AJaABwAHgAgAFZiAGxAZIBATKYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=7NRHX-iPA5KLz7sPtM2XiAQ&bih=758&biw=1440&client=safari#imgrc=lcZcsABPGonSsM&imgdii=knNXxjHqAHv1JM'
+                    image: 'https://66.media.tumblr.com/18eb6b2f99138773a9ca3d93a400ec34/tumblr_o9qj5oqVgC1qi4j1oo6_540.gif'
                 },
                 {
                     name: 'Ironman',
                     hp: 500,
-                    image: 'https://www.google.com/search?q=Ironman+gif&tbm=isch&ved=2ahUKEwi7y5vT3bvrAhWEBrcAHZfpAYoQ2-cCegQIABAA&oq=Ironman+gif&gs_lcp=CgNpbWcQAzIECAAQQzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIAFDPhQNYz4UDYPeJA2gAcAB4AIABUIgBUJIBATGYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=j9VHX_vHBoSN3LUPl9OH0Ag&bih=758&biw=1440&client=safari#imgrc=4U4dPnnPHxebqM&imgdii=TjQH9Mdd1Ula1M'
+                    image: 'https://i.pinimg.com/originals/be/17/d2/be17d2237e14cdd73caa8cf1d7e54d09.gif'
                 },
                 {
                     name: 'spiderman',
@@ -30,7 +29,7 @@ export default {
                 {
                     name: 'Payut',
                     hp: 50,
-                    image: 'https://www.google.com/search?q=Payut+gif&tbm=isch&ved=2ahUKEwjLrNvr3bvrAhVN43MBHbkGCSoQ2-cCegQIABAA&oq=Payut+gif&gs_lcp=CgNpbWcQA1DDvAJYw7wCYLnDAmgAcAB4AIABSIgBSJIBATGYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=wtVHX8vDHc3Gz7sPuY2k0AI&bih=758&biw=1440&client=safari#imgrc=jsUGf2vLSNKqoM&imgdii=bf_1AJOUpF-uNM'
+                    image: 'https://media1.tenor.com/images/9c5d5c9962f65fc78c2f376f2cf14abc/tenor.gif?itemid=14647593'
                 },
             ],
 
@@ -38,17 +37,17 @@ export default {
                 {
                     name: 'Darth Vader',
                     hp: 800,
-                    image: 'https://www.google.com/search?q=Darth+Vader+gif&tbm=isch&ved=2ahUKEwiS9vD_3bvrAhWCT3wKHYLVDU8Q2-cCegQIABAA&oq=Darth+Vader+gif&gs_lcp=CgNpbWcQAzIECCMQJzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIAFD1twFY9bcBYPnAAWgAcAB4AIAB2gGIAdoBkgEDMi0xmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=7NVHX5LQL4Kf8QOCq7f4BA&bih=758&biw=1440&client=safari#imgrc=qFyL7yVrEG4XtM&imgdii=F8rPL_dHRuBoQM'
+                    image: 'https://thumbs.gfycat.com/BruisedGrimyGalago-size_restricted.gif'
                 },
                 {
                     name: 'Thnos',
                     hp: 990,
-                    image: 'https://www.google.com/search?q=Thnos+gif&tbm=isch&ved=2ahUKEwiv07WM3rvrAhVNNrcAHYI7Cs0Q2-cCegQIABAA&oq=Thnos+gif&gs_lcp=CgNpbWcQAzIGCAAQChAYUIjSAli32gJghN0CaABwAHgAgAFIiAGNAZIBATKYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=B9ZHX--zBM3s3LUPgveo6Aw&bih=758&biw=1440&client=safari#imgrc=yQmhtdzxeVnMFM'
+                    image: 'https://data.whicdn.com/images/326805782/original.gif'
                 },
                 {
                     name: 'Cell',
                     hp: 434,
-                    image: 'https://www.google.com/search?q=Cell%20gif&tbm=isch&tbs=rimg%3ACUr5axB1s22JYQKC-6qK9wVd&client=safari&hl=en-GB&sa=X&ved=0CCcQuIIBahcKEwi4zfyv3rvrAhUAAAAAHQAAAAAQDA&biw=1440&bih=758#imgrc=_IhiuvJhsurfuM'
+                    image: 'https://i.kym-cdn.com/photos/images/original/000/712/748/7d3.gif'
                 }
             ]
         }

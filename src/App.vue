@@ -3,7 +3,6 @@
     <div class="row">
         <div class="col-md-4"></div>
         <div class="col-md-4"> <Button @click="show = !show">Start</Button>
-
             <transition name="fade">
                 <div v-if="show">
                     <Wan  @Imgmonster="imgmonster" @Imghero="imghero" @Heroname="Heroname" @HeroHP="HeroHp" @Monstername="Monstername" @MonsterHP="MonsterHP"></Wan>
@@ -68,11 +67,10 @@
 </template>
 
 <script>
-import Button from "./components/Button.vue"
+import Button from "./components/Button"
 import Wan from "./components/Wan.vue"
 export default {
     name: 'App',
-
     components: {
         Button,
         Wan
@@ -149,6 +147,7 @@ export default {
 <style>
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
+    background-image: url(https://thestandard.co/wp-content/uploads/2020/07/THE-POWER-GAME-EP60-COVER-WEB-800x430.jpg);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
