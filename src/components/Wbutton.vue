@@ -1,13 +1,13 @@
 <template>
-<div id="Button">
-    <button @click="$attk">battle</button>
-    <button @click="$Spattk">Attack </button>
+<div id="AttackButton">
+    <button @click="$attk" class="btn btn-warning mr-3">Attack</button>
+    <button @click="$Spattk" class="btn btn-warning">Special Attack</button>
 </div>
 </template>
 
 <script>
 export default {
-    el: '#Button',
+    el: '#AttackButton',
     data: function () {
         return {
             
